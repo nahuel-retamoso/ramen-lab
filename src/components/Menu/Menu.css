@@ -12,15 +12,19 @@
     align-items: center;
 }
 
-.Text {
+.MenuTitle {
     margin: 0;
     padding: 0;
-    text-align: center;
     color: rgb(255, 255, 255);
-    padding-top: 2%;
-    font-size: 2.5em;
+    font-size: 1.6em;
     font-family: 'Reggae One', cursive;
     text-shadow: 2px 2px 2px rgb(123, 118, 72);
+    background-color: #c4c189;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .MenuContainer {

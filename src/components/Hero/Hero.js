@@ -1,21 +1,16 @@
+import { forwardRef } from 'react';
 import './Hero.css';
 
-const Hero = () => {
+const Hero = ({}, ref) => {
+
     return (
-        <div className="hero">
+        <div ref={ref} className="hero">
             <img className='gif' src='ramen.gif' alt='ramen'></img>
-            <h1 className='tagline'>
-                <span>Un</span>
-                <span>viaje </span>
-                <span>culinario </span>
-                <span>al </span>
-                <br></br>
-                <span>corazon </span>
-                <span>de </span>
-                <span>japon</span>
-                </h1>
+            <h3 className="tagline">
+            Slurp up the authentic taste of japan
+            </h3>
         </div>
     );
     }
 
-export default Hero;
+export default forwardRef(Hero);

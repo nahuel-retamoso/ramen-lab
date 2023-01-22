@@ -1,20 +1,16 @@
 import "./MenuCard.css";
 
-const MenuCard = () => {
+const MenuCard = ({title, ingredients}) => {
     return (
         <div className="MenuCard">
             <div className="MenuHeader">
                 <div className="NameContainer">
-                    <h2 className="MenuName">Shoyu ramen</h2>
+                    <h2 className="MenuName">{title}</h2>
                 </div>
-                <div className="WhiteSpace">H</div>
+                <div className="WhiteSpace">麺</div>
             </div>
             <ul className="IngredientList">
-                <li className="Ingredient">Noodles</li>
-                <li className="Ingredient">Carrot</li>
-                <li className="Ingredient">Onion</li>
-                <li className="Ingredient">Chicken</li>
-                <li className="Ingredient">Soy sause</li>
+                {ingredients.map((ingredient, index) => {return (<li key={index} className="IngredientItem">{ingredient}</li>)})}
             </ul>
         </div>
     );

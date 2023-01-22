@@ -1,0 +1,11 @@
+.DateTimeInput {
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Picker {
+    margin: 4%;
+}

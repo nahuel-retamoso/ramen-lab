@@ -9,7 +9,7 @@ const Navbar = ({click}) => {
                 <button className='button' onClick={() => click('start')}>Home</button>
                 <button className='button' onClick={() => click('menu')}>Menu</button>
                 <button className='button' onClick={() => click('map')}>Find Us</button>
-                <button className='button' onClick={() => click('booking')}>Book a table</button>
+                <button className='button' onClick={() => click('booking')}>Reserve a table</button>
             </div>
         </div>
     )
